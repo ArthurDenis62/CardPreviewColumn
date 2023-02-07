@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-brightOrange: hsl(31, 77%, 52%);
+    --color-darkCyan: hsl(184, 100%, 22%);
+    --color-veryDarkCyan: hsl(179, 100%, 13%);
+    --color-transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --color-veryLightGray: hsl(0, 0%, 95%);
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+    line-height: 1.7em;
+    max-width: 210px;
+    color: var(--color-transparentWhite);
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    width: 250px;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subblock {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    justify-content: space-between;
+}
+
+.first {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background-color: var(--color-brightOrange);
+}
+
+.second {
+    background-color: var(--color-darkCyan);
+}
+
+.third {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: var(--color-veryDarkCyan);
+}
+
+img {
+    width: 65px;
+    height: 40px;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-family: 'Big Shoulders Display';
+    color: var(--color-veryLightGray);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-veryLightGray);
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.first button {
+    color: var(--color-brightOrange);
+}
+
+.second button {
+    color: var(--color-darkCyan);
+}
+
+.third button {
+    color: var(--color-veryDarkCyan);
+}
+
+@media (max-width: 1050px) {
+    .container {
+        flex-direction: column;
+        margin-top: 22em;
+    }
+    .first {
+        border-top-left-radius: 0em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+    .third {
+        border-top-right-radius: 0em;
+        border-bottom-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+    p {
+        max-width: 225  px;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
